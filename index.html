@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/login.css">
+    <title>PetitDelices</title>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">    
+                <nav class="navbar navbar-expand-md navbar-light">
+                  <div class="container-fluid">
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                      </ul>
+                      <form class="d-flex">
+                          <!-- <input class="form-control me-2 heig" type="search" placeholder="Buscar" aria-label="Search"> -->
+                          <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button  type="button" class="btn btn-outline-secondary"><i class='bx bx-shopping-bag' id="cart-icon"></i></button>
+                            <button class="btn btn-outline-secondary" type="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="bi bi-person"></i></button>
+                          </div>                                
+                      </form>   
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+        <div class="nav container">
+            <div class="cart">
+                <h2 class="cart-title">Mi carrito</h2>
+                <div class="cart-content">
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Comprar</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <div class="container">   
+        <div id="carouselExampleSlidesOnly" class="carousel slide carusel-expand-sm carousel-light" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/pexels-antoni-shkraba-production-8902172.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/pexels-polina-tankilevitch-5848127.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/baked-1867003_1920.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+    <section class="shop container">
+        <h2 class="section-title">Petits D&eacute;lices</h2>
+        <div class="shop-content">
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/pexels-vojtech-okenka-1055270.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 1</h2>
+                    <span class="price" value="680">$680</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/pexels-vojtech-okenka-1055271.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 2</h2>
+                    <span class="price" value="720">$720</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/pexels-vojtech-okenka-1055272.jpg" alt="imagen" class="product-img">
+                    <h2 class="product-title">Cake 3</h2>
+                    <span class="price" value="740">$740</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/happy-mothers-day-3140004_1920.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 4</h2>
+                    <span class="price" value="1030">$1030</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/torta1.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 5</h2>
+                    <span class="price" value="840">$840</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="/img/the-cake-427920_1920.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 6</h2>
+                    <span class="price" value="940">$940</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+             </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/dessert-1786311_1920.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 7</h2>
+                    <span class="price" value="1030">$1030</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/cupcakes (1).jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 8</h2>
+                    <span class="price" value="840">$840</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/torta.6.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 9</h2>
+                    <span class="price" value="940">$940</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/torta2.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 10</h2>
+                    <span class="price" value="870">$870</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/torta3.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 11</h2>
+                    <span class="price" value="910">$910</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-box">
+                    <img src="./img/cakes-4502270_1920.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cake 12</h2>
+                    <span class="price" value="970">$970</span>
+                    <button  type="button" class="btn btn-outline-secondary">Añadir carro</button> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- modal login -->
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./img/blank-profile-picture-g23520e75b_1280.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+    <footer class="w-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="box">
+                <h6><b> Nosotros</b></h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus officia dolorem atque tenetur, reiciendis quis
+                corporis aperiam molestiae adipisci neque quaerat possimus aliquam at iure minima quidem aliquid quibusdam.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="box2">
+                <h6><b>Contactanos</b> </h6>
+                <p>T&eacute;lefono: (56)912345678</p>
+                <p>Email: petits@delice.com</p>
+              </div>
+              <div id="iconos">
+                <a href="#"><span class="bi bi-facebook"></span></a>
+                <a href="#"><span class="bi bi-instagram"></span></a>
+                <a href="#"><span class="bi bi-twitter"></span></a>
+                <a href="#"><span class="bi bi-whatsapp"></span></a>
+              </div>
+          </div>
+        </div>
+        <div class="box3">
+          <p>Copyright 2022 | Todos los desechos reservados | Diseñado por Priscila Loza </p>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>   
+</body>
+</html>
